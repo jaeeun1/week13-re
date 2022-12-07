@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>명_언전시회 1페이지</title>
+	
+	<style type="text/css">
+		body{margin: 0; cursor: none;}
+		.cursor {
+	      width: 6rem;
+	      height: 6rem;
+	      border: 2px solid var(--color-texta);
+	      border-radius: 50%;
+	      position: absolute;
+	      z-index: 1000;
+	      transform: translate(-50%, -50%);
+	      pointer-events: none;
+	      transition: all 0.3s ease;
+	      transition-property: background, transform;
+	      transform-origin: 100% 100%;
+ 		  backdrop-filter: brightness(1.2) blur(2px);
+	      background-size: cover;
+	  }
+	
+
+		.container{position: relative; width: 100vw; height: 100vh;}
+		.BG{position: absolute; width: 100vw; height: 100vh; }
+		.title{height: 20vw; transform: translate(-50%,-50%);
+                        position: absolute; left: 50%; top: 50%;
+                        display: flex;}
+		.titleImg{transform: translate(-50%. -50%); }
+		.word1{position: absolute; top: 32vh; left: 3vw; width: 4.5vw; height: 7vh;}
+		.word2{position: absolute; top: 10vh; left: 25vw; width: 6vw; height: 7vh;}
+		.word3{position: absolute; top: 25vh; left: 75vw; width: 9vw; height: 7vh;}
+		.word4{position: absolute; top: 30vh; left: 88vw; width: 5.5vw; height: 7vh;}
+		.word5{position: absolute; top: 83vh; left: 5vw; width: 7vw; height: 7vh;}
+		.word6{position: absolute; top: 80vh; left: 30vw; width: 5.7vw; height: 7vh;}
+		.word7{position: absolute; top: 65vh; left: 18vw; width: 7.3vw; height: 7vh;}
+		.word8{position: absolute; top: 69vh; left: 45vw; width: 5.3vw; height: 7vh;}
+		.word9{position: absolute; top: 83vh; left: 68vw; width: 9vw; height: 7vh;}
+		.word10{position: absolute; top: 75vh; left: 82vw; width: 9.5vw; height: 7vh;}
+
+		.keyword{transform: translate(-50%. -50%); position: absolute; color: #5b5b5b; margin:0; font-family: new york; font-size: 25px;}
+		.twingkleImg-a{transform: translate(50%. -50%); position: absolute; margin:0; bottom: 0; right: 0;}
+		.twingkleImg-b{transform: translate(50%. -50%); position: absolute; margin:0; bottom: 0; right: 0; opacity: 0;}
+
+		.scroll{height: 3vw; transform: translate(-50%,-50%);
+                        position: absolute; left: 50%; bottom: 0;
+                        display: flex;}
+
+        .box1{position: absolute; top: 39vh; left: 7.5vw; width: 200px; height: 300px; opacity: 0; }
+        .box2{position: absolute; top: 17vh; left: 31vw; width: 200px; height: 300px; opacity: 0;}
+        .box3{position: absolute; top: 32vh; left: 84vw; width: 200px; height: 300px; opacity: 0;}
+        .box4{position: absolute; top: 37vh; left: 93.5vw; width: 200px; height: 300px; opacity: 0;}
+        .box5{position: absolute; top: 90vh; left: 12vw; width: 200px; height: 300px; opacity: 0;}
+        .box6{position: absolute; top: 87vh; left: 35.7vw; width: 200px; height: 300px; opacity: 0;}
+        .box7{position: absolute; top: 72vh; left: 25.3vw; width: 200px; height: 300px; opacity: 0;}
+        .box8{position: absolute; top: 76vh; left: 50.3vw; width: 200px; height: 300px; opacity: 0;}
+        .box9{position: absolute; top: 90vh; left: 77vw; width: 200px; height: 300px; opacity: 0;}
+        .box10{position: absolute; top: 82vh; left: 92.5vw; width: 200px; height: 300px; opacity: 0;}
+
+
+        .textinbox{color: white; margin:0; font-family: new york; font-size: 20px; font-weight: lighter;
+        	filter: blur(2px); }
+
+
+
+
+		/*마우스호버*/
+		.word1:hover ~.box1{opacity: 100; transition:0.8s;}
+		.word2:hover ~.box2{opacity: 100; transition:0.8s;}
+		.word3:hover ~.box3{opacity: 100; transition:0.8s;}
+		.word4:hover ~.box4{opacity: 100; transition:0.8s;}
+		.word5:hover ~.box5{opacity: 100; transition:0.8s;}
+		.word6:hover ~.box6{opacity: 100; transition:0.8s;}
+		.word7:hover ~.box7{opacity: 100; transition:0.8s;}
+		.word8:hover ~.box8{opacity: 100; transition:0.8s;}
+		.word9:hover ~.box9{opacity: 100; transition:0.8s;}
+		.word10:hover ~.box10{opacity: 100; transition:0.8s;}
+
+
+		.aaa:hover{
+				  transform: scale(1.2);
+				  -webkit-transform: scale(1.2);
+				  -moz-transform: scale(1.2);
+				  -ms-transform: scale(1.2);
+				  -o-transform: scale(1.2);
+				  transition:0.8s;
+				} 
+		.aaa:hover >.keyword{color: white; transition:0.8s}
+		.aaa:hover >.twingkleImg-b{ 
+				 opacity: 100;
+				  transform: scale(1.2);
+				  -webkit-transform: scale(1.2);
+				  -moz-transform: scale(1.2);
+				  -ms-transform: scale(1.2);
+				  -o-transform: scale(1.2);
+				  transition:0.8s;
+				}
+		
+/*		.aaa:hover ~ .cursor{scale: 130%; transition:0.8s;
+							}*/
+
+	</style>
+</head>
+<body>
+
+
+ <div class="container">
+ 	<img class="BG" src="BG.png">
+
+ 	<div class="title">
+ 		<img class="titleImg" src="title.gif">
+ 	</div>
+
+ 	<div class="aaa word1">
+ 		<p class="keyword">Life</p>
+ 		<img class="twingkleImg-a" src="twingkleA.png">
+ 		<img class="twingkleImg-b" src="twingkleB.png">
+ 	</div>
+ 	 		<div class="box1">
+ 			<h1 class="textinbox">What we do is less than a drop in the ocean. But if it were missing, the ocean would lack something.
+ 			<br>- Mother Teresa -</h1>
+ 			</div>
+ 
+
+ 	<div class="aaa word2">
+ 		<a href="effort.html">
+ 		<p class="keyword">Effort</p>
+ 		<img class="twingkleImg-a" src="twingkleA.png">
+ 		<img class="twingkleImg-b" src="twingkleB.png">
+ 	</div>
+ 			 <div class="box2">
+ 			<h1 class="textinbox">What we do is less than a drop in the ocean. But if it were missing, the ocean would lack something.
+ 			<br>- Mother Teresa -</h1>
+ 			</div>
+
+ 	<div class="aaa word3">
+ 		<p class="keyword">Friendship</p>
+ 		<img class="twingkleImg-a" src="twingkleA.png">
+ 		<img class="twingkleImg-b" src="twingkleB.png">
+ 	</div>
+ 			<div class="box3">
+ 			<h1 class="textinbox">What we do is less than a drop in the ocean. But if it were missing, the ocean would lack something.
+ 			<br>- Mother Teresa -</h1>
+ 			</div>
+
+ 	<div class="aaa word4">
+ 		<p class="keyword">Time</p>
+ 		<img class="twingkleImg-a" src="twingkleA.png">
+ 		<img class="twingkleImg-b" src="twingkleB.png">
+ 	</div>
+ 			<div class="box4">
+ 			<h1 class="textinbox">What we do is less than a drop in the ocean. But if it were missing, the ocean would lack something.
+ 			<br>- Mother Teresa -</h1>
+ 			</div>
+
+  	<div class="aaa word5">
+  		<p class="keyword">Reading</p>
+  		<img class="twingkleImg-a" src="twingkleA.png">
+ 		<img class="twingkleImg-b" src="twingkleB.png">
+ 	</div>
+ 			<div class="box5">
+ 			<h1 class="textinbox">What we do is less than a drop in the ocean. But if it were missing, the ocean would lack something.
+ 			<br>- Mother Teresa -</h1>
+ 			</div>
+
+ 	<div class="aaa word6">
+ 		<p class="keyword">Hope</p>
+ 		<img class="twingkleImg-a" src="twingkleA.png">
+ 		<img class="twingkleImg-b" src="twingkleB.png">
+ 	</div>
+ 			<div class="box6">
+ 			<h1 class="textinbox">What we do is less than a drop in the ocean. But if it were missing, the ocean would lack something.
+ 			<br>- Mother Teresa -</h1>
+ 			</div>
+
+ 	<div class="aaa word7">
+ 		<p class="keyword">Success</p>
+ 		<img class="twingkleImg-a" src="twingkleA.png">
+ 		<img class="twingkleImg-b" src="twingkleB.png">
+ 	</div>
+ 			<div class="box7">
+ 			<h1 class="textinbox">What we do is less than a drop in the ocean. But if it were missing, the ocean would lack something.
+ 			<br>- Mother Teresa -</h1>
+ 			</div>
+
+ 	<div class="aaa word8">
+ 		<p class="keyword">Love</p>
+ 		<img class="twingkleImg-a" src="twingkleA.png">
+ 		<img class="twingkleImg-b" src="twingkleB.png">
+ 	</div>
+ 			<div class="box8">
+ 			<h1 class="textinbox">What we do is less than a drop in the ocean. But if it were missing, the ocean would lack something.
+ 			<br>- Mother Teresa -</h1>
+ 			</div>
+
+
+ 	<div class="aaa word9">
+ 		<p class="keyword">Challenge</p>
+ 		<img class="twingkleImg-a" src="twingkleA.png">
+ 		<img class="twingkleImg-b" src="twingkleB.png">
+ 	</div>
+ 			<div class="box9">
+ 			<h1 class="textinbox">What we do is less than a drop in the ocean. But if it were missing, the ocean would lack something.
+ 			<br>- Mother Teresa -</h1>
+ 			</div>
+
+ 	<div class="aaa word10">
+ 		<p class="keyword">Confidence</p>
+ 		<img class="twingkleImg-a" src="twingkleA.png">
+ 		<img class="twingkleImg-b" src="twingkleB.png">
+ 	</div>
+ 			<div class="box10">
+ 			<h1 class="textinbox">What we do is less than a drop in the ocean. But if it were missing, the ocean would lack something.
+ 			<br>- Mother Teresa -</h1>
+ 			</div>
+
+ 			<!-- 마우스커서 -->
+ <div class="cursor"></div>
+
+ 	<div class="scroll">
+ 	 <img src="scrolldown.png">
+ 	</div>
+ </div>
+
+ 	 
+
+ 	<script type="text/javascript">
+	  let mouseCursor = document.querySelector(".cursor");
+	  window.addEventListener("mousemove", cursor);
+	  function cursor(e) {
+	    mouseCursor.style.left = e.pageX + "px";
+	    mouseCursor.style.top = e.pageY + "px";
+	}
+	</script>
+
+</body>
+</html>

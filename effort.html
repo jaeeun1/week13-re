@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>effort</title>
+	<style type="text/css">
+		body{margin: 0; cursor: none;}
+		.cursor {
+	      width: 6rem;
+	      height: 6rem;
+	      border: 2px solid var(--color-texta);
+	      border-radius: 50%;
+	      position: absolute;
+	      z-index: 1000;
+	      transform: translate(-50%, -50%);
+	      pointer-events: none;
+	      transition: all 0.3s ease;
+	      transition-property: background, transform;
+	      transform-origin: 100% 100%;
+ 		  backdrop-filter: brightness(1.2) blur(2px);
+	      background-size: cover;
+	  }
+	
+
+		.container{position: relative; width: 100vw; height: 100vh;}
+		.BG{position: absolute; width: 100vw; height: 100vh; z-index: -3;}
+		.title{height: 20vw; transform: translate(-50%,-50%);
+                        position: absolute; left: 50%; top: 50%;
+                        display: flex; z-index: -2;}
+		.titleImg{transform: translate(-50%. -50%); }
+
+		.word2{position: absolute; top: 10vh; left: 25vw; width: 6vw; height: 7vh;}
+
+		.keyword{transform: translate(-50%. -50%); position: absolute; color: #5b5b5b; margin:0; font-family: new york; font-size: 25px;}
+		.twingkleImg-a{transform: translate(50%. -50%); position: absolute; margin:0; bottom: 0; right: 0;}
+		.twingkleImg-b{transform: translate(50%. -50%); position: absolute; margin:0; bottom: 0; right: 0; opacity: 0;}
+		/*.scroll{height: 3vw; transform: translate(-50%,-50%);
+                        position: absolute; left: 50%; bottom: 0;
+                        display: flex;}*/
+
+		.box2{position: absolute; top: 17vh; left: 31vw; width: 200px; height: 300px;
+				color: white; }
+		.person1{position: absolute; width: 200px; top: -0.5vh; left: -0.5vw; z-index: -1;}
+
+		.box2-2{position: absolute; top: 40vh; left: 50vw; width: 200px; height: 300px;
+				color: white; }
+		.person2{position: absolute; width: 200px; top: -0.5vh; left: -0.5vw; z-index: -1;}
+
+		.box2-3{position: absolute; top: 10vh; left: 47vw; width: 200px; height: 300px;
+				color: white; }
+		.person3{position: absolute; width: 200px; top: -0.5vh; left: -0.5vw; z-index: -1;}
+
+		.box2-4{position: absolute; top: 60vh; left: 66vw; width: 200px; height: 300px;
+				color: white; }
+		.person4{position: absolute; width: 200px; top: -0.5vh; left: -0.5vw; z-index: -1;}
+
+
+
+		.textinbox{color: white; margin:0; font-family: new york; font-size: 20px; font-weight: lighter; z-index:999;}
+
+/*		 배경투명도*/
+		.BG{opacity: 1; animation: fadein 2s forwards; color: white;}
+		@keyframes fadein{to{opacity: .3;}}
+
+		.showbox1{opacity: 0.3; animation: fadeout 3s forwards; color: white;}
+		@keyframes fadeout{to{opacity:1;}}
+
+		.showbox2{animation-name: goup2; animation-duration:3s;
+  		animation-direction:alternate; animation-fill-mode: forwards;}
+  		@keyframes goup2{ 
+  						0%{top: 100vh; opacity: 0;}
+  						100%{top: 40vh; opacity: 1;}
+  						}
+		.showbox3{animation-name: goup3; animation-duration:3s;
+  		animation-direction:alternate; animation-fill-mode: forwards;}
+  		@keyframes goup3{ 
+  						0%{top: 100vh; opacity: 0;}
+  						100%{top: 10vh; opacity: 1;}
+  						}
+  		.showbox4{animation-name: goup4; animation-duration:3s;
+  		animation-direction:alternate; animation-fill-mode: forwards;}
+  		@keyframes goup4{ 
+  						0%{top: 100vh; opacity: 0;}
+  						100%{top: 60vh; opacity: 1;}
+  						}
+
+
+
+
+
+  		/*
+		.showbox3{opacity: 0.3; animation: fadeout 8s forwards; color: white;}
+		@keyframes fadeout{to{opacity:1;}}
+
+		.showbox4{opacity: 0.3; animation: fadeout 11s forwards; color: white;}
+		@keyframes fadeout{to{opacity:1;}}*/
+
+
+
+	</style>
+</head>
+
+<body>
+	<div class="container">
+ 		<img class="BG" src="BG.png">
+ 			<div class="title">
+ 				<img class="titleImg" src="title.gif">
+ 			</div>
+
+ 		 	<div class="aaa word2">
+ 				<p class="keyword">Effort</p>
+ 				<img class="twingkleImg-a" src="twingkleA.png">
+ 				<img class="twingkleImg-b" src="twingkleB.png">
+ 			</div>
+ 			<div class="box2 showbox1">
+ 				<img class="person1" src="Teresa.png">
+ 				<h1 class="textinbox">What we do is less than a drop in the ocean. But if it were missing, the ocean would lack something.
+ 				<br>- Mother Teresa -</h1> 				
+ 			</div>
+
+ 			<div class="box2-2 showbox2">
+ 				<img class="person2" src="Aristotle.jpg">
+ 				<h1 class="textinbox">What we do is less than a drop in the ocean. But if it were missing, the ocean would lack something.
+ 				<br>- Mother Teresa -</h1>
+ 			</div>
+
+
+ 			<div class="box2-3 showbox3">
+ 				<img class="person3" src="Newton.jpg">
+ 				<h1 class="textinbox">What we do is less than a drop in the ocean. But if it were missing, the ocean would lack something.
+ 				<br>- Mother Teresa -</h1>
+ 			</div>
+
+ 			<div class="box2-4 showbox4">
+ 				<img class="person3" src="Miguel.jpg">
+ 				<h1 class="textinbox">What we do is less than a drop in the ocean. But if it were missing, the ocean would lack something.
+ 				<br>- Mother Teresa -</h1>
+ 			</div>
+
+					<!-- 마우스커서 -->
+					 <div class="cursor"></div>
+
+					<!--  	<div class="scroll">
+					 	 <img src="scrolldown.png">
+					 	</div> -->
+
+
+ 	</div>
+
+ 	 
+
+ 	<script type="text/javascript">
+	  let mouseCursor = document.querySelector(".cursor");
+	  window.addEventListener("mousemove", cursor);
+	  function cursor(e) {
+	    mouseCursor.style.left = e.pageX + "px";
+	    mouseCursor.style.top = e.pageY + "px";
+	}
+	</script>
+
+</body>
+</html>
